@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PANTALLA 2: REGISTRO (no lleva imágenes) -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_titulo"
+            android:textColor="@color/rojo"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            style="@style/Campo"
+            android:layout_marginTop="20dp"
+            android:autofillHints="name"
+            android:hint="@string/hint_nombre"
+            android:inputType="textPersonName|textCapWords" />
+
+        <EditText
+            android:id="@+id/etApellidos"
+            style="@style/Campo"
+            android:autofillHints="familyName"
+            android:hint="@string/hint_apellidos"
+            android:inputType="textPersonName|textCapWords" />
+
+        <EditText
+            android:id="@+id/etCedula"
+            style="@style/Campo"
+            android:autofillHints="username"
+            android:hint="@string/hint_cedula"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etDireccion"
+            style="@style/Campo"
+            android:autofillHints="postalAddress"
+            android:hint="@string/hint_direccion"
+            android:inputType="textPostalAddress" />
+
+        <EditText
+            android:id="@+id/etCorreo"
+            style="@style/Campo"
+            android:autofillHints="emailAddress"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etClave"
+            style="@style/Campo"
+            android:autofillHints="newPassword"
+            android:hint="@string/hint_clave"
+            android:inputType="textPassword" />
+
+        <CheckBox
+            android:id="@+id/chkTerminos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/chk_terminos" />
+
+        <Button
+            android:id="@+id/btnCrearCuenta"
+            style="@style/BotonPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/btn_crear_cuenta" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            style="@style/BotonTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/btn_volver" />
+
+    </LinearLayout>
+</ScrollView>

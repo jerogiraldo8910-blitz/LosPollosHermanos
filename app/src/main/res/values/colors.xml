@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="amarillo">#F5B800</color>
+    <color name="rojo">#C8102E</color>
+    <color name="oscuro">#1F1F1F</color>
+    <color name="texto">#212121</color>
+    <color name="gris">#757575</color>
+    <color name="gris_claro">#F2F2F2</color>
+    <color name="borde">#BDBDBD</color>
+    <color name="fondo">#FFFBF0</color>
+    <color name="blanco">#FFFFFF</color>
+</resources>

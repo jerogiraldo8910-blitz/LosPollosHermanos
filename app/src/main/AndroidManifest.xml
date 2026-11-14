@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- ================================================================
+         ★★★ IMAGEN AQUÍ #0 — ICONO DE LA APP ★★★
+         Ahora usa el marcador res/drawable/ic_launcher_marcador.xml.
+         Para poner el tuyo: clic derecho en "res" → New → Image Asset,
+         y cambia android:icon y android:roundIcon a  @mipmap/ic_launcher
+         ================================================================ -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_marcador"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher_marcador"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LosPollos">
+
+        <!-- Pantalla 1: Login (pantalla de entrada) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Pantalla 2: Registro -->
+        <activity android:name=".RegisterActivity" android:exported="false" />
+
+        <!-- Pantalla 3A: Menú del cliente -->
+        <activity android:name=".MenuClienteActivity" android:exported="false" />
+
+        <!-- Pantalla 3B: Menú del administrador -->
+        <activity android:name=".MenuAdminActivity" android:exported="false" />
+
+        <!-- Pantalla 4: "Veamos dónde vives" (cambiar dirección) -->
+        <activity android:name=".DireccionActivity" android:exported="false" />
+
+        <!-- Pantalla 5: Carrito -->
+        <activity android:name=".CarritoActivity" android:exported="false" />
+
+        <!-- Pantalla 6: Gracias por su compra -->
+        <activity android:name=".PedidoActivity" android:exported="false" />
+
+    </application>
+
+</manifest>

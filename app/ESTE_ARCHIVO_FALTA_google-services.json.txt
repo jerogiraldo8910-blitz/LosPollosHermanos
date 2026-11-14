@@ -1,0 +1,5 @@
+Aquí debe ir TU archivo  google-services.json  (descárgalo desde la consola de Firebase:
+Configuración del proyecto -> Tus apps -> Android -> google-services.json).
+Debe quedar en:  app/google-services.json   (junto a build.gradle.kts).
+El package de la app en Firebase debe ser:  com.example.lospolloshermanos
+Sin ese archivo el proyecto NO compila. Borra este .txt cuando lo pongas.

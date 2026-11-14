@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Los Pollos Hermanos</string>
+
+    <!-- Login -->
+    <string name="login_bienvenida">Hola, bienvenido a la familia Los Pollos Hermanos. Ahora puedes pedir desde tu casa.</string>
+    <string name="hint_correo">Cuenta (correo)</string>
+    <string name="hint_clave">Contraseña</string>
+    <string name="btn_iniciar_sesion">Iniciar sesión</string>
+    <string name="btn_registrarse">Registrarse</string>
+    <string name="desc_logo">Logo de Los Pollos Hermanos</string>
+
+    <!-- Registro -->
+    <string name="reg_titulo">Registrarse</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_apellidos">Apellidos</string>
+    <string name="hint_cedula">Cédula / T.I.</string>
+    <string name="hint_direccion">Dirección</string>
+    <string name="hint_email">Email</string>
+    <string name="chk_terminos">He leído y acepto los términos y condiciones</string>
+    <string name="btn_crear_cuenta">Crear cuenta</string>
+
+    <!-- Menús -->
+    <string name="menu_saludo">Hola, %1$s</string>
+    <string name="menu_direccion">Entregar en: %1$s</string>
+    <string name="btn_cambiar_direccion">Cambiar dirección</string>
+    <string name="btn_carrito">🛒 Carrito (%1$d)</string>
+    <string name="btn_cerrar_sesion">Cerrar sesión</string>
+    <string name="btn_agregar">+</string>
+    <string name="desc_producto">Foto del producto</string>
+
+    <!-- Admin -->
+    <string name="admin_titulo">Panel de administrador</string>
+    <string name="btn_anadir_producto">+ Añadir</string>
+    <string name="btn_cargar_ejemplos">Cargar ejemplos</string>
+    <string name="btn_editar">Editar</string>
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="dlg_titulo_nuevo">Nuevo producto</string>
+    <string name="dlg_titulo_editar">Editar producto</string>
+    <string name="dlg_confirmar_eliminar">¿Eliminar %1$s del menú?</string>
+    <string name="hint_nombre_producto">Nombre del producto</string>
+    <string name="hint_precio">Precio</string>
+    <string name="hint_imagen">Imagen (nombre del archivo, sin extensión)</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="btn_cancelar">Cancelar</string>
+
+    <!-- Dirección -->
+    <string name="dir_titulo">Veamos dónde vives</string>
+    <string name="dir_actual">Dirección actual: %1$s</string>
+    <string name="btn_nuevo">Nuevo</string>
+    <string name="btn_listo">Listo</string>
+    <string name="desc_mapa">Mapa de la dirección</string>
+
+    <!-- Carrito -->
+    <string name="carrito_titulo">Tu carrito</string>
+    <string name="carrito_vacio">Tu carrito está vacío</string>
+    <string name="carrito_linea">%1$d x %2$s</string>
+    <string name="carrito_subtotal">Subtotal: %1$s</string>
+    <string name="carrito_iva">IVA (19%%): %1$s</string>
+    <string name="carrito_total">Total: %1$s</string>
+    <string name="btn_pagar">Pagar</string>
+    <string name="btn_volver">Volver</string>
+    <string name="btn_quitar">Quitar</string>
+
+    <!-- Pedido -->
+    <string name="pedido_gracias">¡Gracias por su compra!</string>
+    <string name="pedido_su_pedido">Su pedido</string>
+    <string name="pedido_total">Total pagado: %1$s</string>
+    <string name="pedido_codigo">Pedido #%1$s</string>
+    <string name="btn_volver_menu">Volver al menú</string>
+    <string name="desc_pedido">Imagen de su pedido</string>
+
+    <!-- Mensajes -->
+    <string name="err_campos_vacios">Completa todos los campos</string>
+    <string name="err_correo_invalido">El correo no es válido</string>
+    <string name="err_clave_corta">La contraseña debe tener mínimo 6 caracteres</string>
+    <string name="err_terminos">Debes aceptar los términos y condiciones</string>
+    <string name="err_credenciales">Correo o contraseña incorrectos</string>
+    <string name="err_correo_reservado">Ese correo está reservado</string>
+    <string name="err_precio_invalido">Escribe un precio válido mayor que 0</string>
+    <string name="err_registro">No se pudo crear la cuenta: %1$s</string>
+    <string name="err_generico">Ocurrió un error: %1$s</string>
+    <string name="msg_cuenta_creada">Cuenta creada. Ya puedes iniciar sesión</string>
+    <string name="msg_agregado">%1$s agregado al carrito</string>
+    <string name="msg_direccion_guardada">Dirección actualizada</string>
+    <string name="msg_producto_guardado">Producto guardado</string>
+    <string name="msg_producto_eliminado">Producto eliminado</string>
+    <string name="msg_ejemplos_cargados">Productos de ejemplo cargados</string>
+</resources>

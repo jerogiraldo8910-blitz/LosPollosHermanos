@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- VENTANA PARA AÑADIR / EDITAR UN PRODUCTO (admin) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/etNombre"
+        style="@style/Campo"
+        android:hint="@string/hint_nombre_producto"
+        android:importantForAutofill="no"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/etPrecio"
+        style="@style/Campo"
+        android:hint="@string/hint_precio"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal" />
+
+    <!-- ================================================================
+         ★★★ IMAGEN AQUÍ #4 — NOMBRE DE LA FOTO DEL PRODUCTO ★★★
+         El admin escribe aquí el nombre del archivo que puso en res/drawable,
+         SIN extensión. Ejemplo: si copiaste img_pollo_frito.png → escribe
+         img_pollo_frito. Si lo deja vacío se usa img_producto_default.
+         ================================================================ -->
+    <EditText
+        android:id="@+id/etImagen"
+        style="@style/Campo"
+        android:hint="@string/hint_imagen"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ================================================================
+     ★★★ IMAGEN AQUÍ #0 — ICONO DE LA APP (marcador) ★★★
+     Para usar tu icono: clic derecho en "res" → New → Image Asset
+     (eso crea @mipmap/ic_launcher) y luego, en AndroidManifest.xml,
+     cambia android:icon a  @mipmap/ic_launcher
+     ================================================================ -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <path
+        android:fillColor="#F5B800"
+        android:pathData="M0,0h100v100h-100z" />
+    <path
+        android:strokeColor="#C8102E"
+        android:strokeWidth="6"
+        android:pathData="M20,20L80,80M80,20L20,80" />
+</vector>

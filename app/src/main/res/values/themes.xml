@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Tema principal (requiere la librería Material, que ya trae el proyecto "Empty Views Activity") -->
+    <style name="Theme.LosPollos" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/rojo</item>
+        <item name="colorOnPrimary">@color/blanco</item>
+        <item name="colorSecondary">@color/amarillo</item>
+        <item name="android:windowBackground">@color/fondo</item>
+        <item name="android:statusBarColor">@color/rojo</item>
+    </style>
+
+    <!-- Estilo de los campos de texto -->
+    <style name="Campo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@drawable/bg_campo</item>
+        <item name="android:textColor">@color/texto</item>
+        <item name="android:textColorHint">@color/gris</item>
+    </style>
+
+    <!-- Botón principal (rojo) -->
+    <style name="BotonPrincipal" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/rojo</item>
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+    <!-- Botón secundario (amarillo) -->
+    <style name="BotonSecundario" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/amarillo</item>
+        <item name="android:textColor">@color/oscuro</item>
+    </style>
+
+    <!-- Botón de solo texto -->
+    <style name="BotonTexto" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/rojo</item>
+    </style>
+
+</resources>

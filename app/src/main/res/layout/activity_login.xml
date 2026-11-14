@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PANTALLA 1: LOGIN -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- ================================================================
+             ★★★ IMAGEN AQUÍ #1 — LOGO DE LOS POLLOS HERMANOS ★★★
+             Archivo: app/src/main/res/drawable/img_logo.png
+             (borra antes el marcador img_logo.xml de esa misma carpeta)
+             O cambia el nombre en  android:src="@drawable/img_logo"
+             por el de tu archivo.
+             ================================================================ -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/desc_logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/app_name"
+            android:textColor="@color/rojo"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/login_bienvenida"
+            android:textColor="@color/gris"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etCorreo"
+            style="@style/Campo"
+            android:layout_marginTop="24dp"
+            android:autofillHints="emailAddress"
+            android:hint="@string/hint_correo"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etClave"
+            style="@style/Campo"
+            android:autofillHints="password"
+            android:hint="@string/hint_clave"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnIniciarSesion"
+            style="@style/BotonPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_iniciar_sesion" />
+
+        <Button
+            android:id="@+id/btnRegistrarse"
+            style="@style/BotonTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_registrarse" />
+
+    </LinearLayout>
+</ScrollView>

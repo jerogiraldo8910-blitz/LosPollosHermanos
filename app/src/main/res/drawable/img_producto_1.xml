@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ================================================================
+     ★★★ MARCADOR DE IMAGEN: img_producto_1 ★★★
+     Aquí va: foto de El favorito de Gus — IMAGEN AQUÍ #4
+     Para poner tu imagen real:
+       1) Copia tu archivo a esta carpeta con el nombre  img_producto_1.png  (o .jpg)
+       2) BORRA este archivo  img_producto_1.xml  (si no, habrá recurso duplicado)
+     ================================================================ -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M0,0h100v100h-100z" />
+    <path
+        android:strokeColor="#757575"
+        android:strokeWidth="2"
+        android:pathData="M0,0L100,100M100,0L0,100" />
+</vector>

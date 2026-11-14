@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PANTALLA 6: GRACIAS POR SU COMPRA -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/pedido_gracias"
+            android:textColor="@color/rojo"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- ================================================================
+             ★★★ IMAGEN AQUÍ #3 — IMAGEN DEL PEDIDO ("Su pedido (una imagen)") ★★★
+             Archivo: app/src/main/res/drawable/img_pedido.png
+             (borra antes el marcador img_pedido.xml de esa misma carpeta)
+             O cambia el nombre en  android:src="@drawable/img_pedido"
+             por el de tu archivo.
+             ================================================================ -->
+        <ImageView
+            android:id="@+id/imgPedido"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/desc_pedido"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_pedido" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/pedido_su_pedido"
+            android:textColor="@color/texto"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCodigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/gris"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/texto"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnVolverMenu"
+            style="@style/BotonPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/btn_volver_menu" />
+
+    </LinearLayout>
+</ScrollView>

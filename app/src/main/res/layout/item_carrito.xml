@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FILA DEL CARRITO: foto + nombre + "2 x $15.00" + subtotal + Quitar -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_tarjeta"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <!-- ================================================================
+         ★★★ IMAGEN AQUÍ #4 — FOTO DEL PRODUCTO ★★★
+         No se pone un archivo aquí: Kotlin la carga con cargarImagenProducto()
+         desde el campo "imagen" del producto. Pasos completos en ImagenUtil.kt
+         (archivos img_producto_1.png ... img_producto_4.png en res/drawable).
+         ================================================================ -->
+    <ImageView
+        android:id="@+id/imgProducto"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:contentDescription="@string/desc_producto"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/img_producto_default" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="El favorito de Gus" />
+
+        <TextView
+            android:id="@+id/tvCantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gris"
+            android:textSize="14sp"
+            tools:text="2 x $15.00" />
+
+        <TextView
+            android:id="@+id/tvSubtotalLinea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/rojo"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="$30.00" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnQuitar"
+        style="@style/BotonPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_quitar" />
+
+</LinearLayout>
